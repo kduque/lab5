@@ -44,3 +44,10 @@ function anagrammedName(name) {
 		return name;
 	}
 }
+
+$('friend2').click(function(){
+	event.preventDefault();
+	var temp_name = $("friend2").text();
+	var new_name = anagrammedName(temp_name);
+	$(temp_name).replaceWith(new_name);
+});
